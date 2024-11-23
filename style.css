@@ -270,16 +270,21 @@ body{
     margin-bottom: 30px;
     border-radius: 30px;
 }
-.porfolio .fila .item img{
-    width: 100%;
+.porfolio .fila .item img {
+    width: 100%; /* Asegura que ocupen el ancho del contenedor */
+    height: 200px; /* Fija una altura para uniformidad */
     display: block;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 30px; /* Mantén el estilo redondeado */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
 }
+
 .porfolio .fila .item p{
     color: #fff;
     margin: 20px 0;
 }
+
+
 /* SECCION CONTACTO */
 .contacto .fila{
     display: flex;
